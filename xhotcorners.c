@@ -9,6 +9,20 @@
 // http://thetudor.ddns.net/res/docs/xcb/util-wm/modules.html
 // https://standards.freedesktop.org/wm-spec/wm-spec-latest.html
 
+
+// TODO:
+// * Parameter to select the corner: nw, ne, sw, se.
+// * Multiple commands? Mouse-over, mouse-out, click, release, doubleclick?, different mouse buttons
+//     * Might be overkill. Might introduce too much complexity.
+//     * But might be useful. I could use a hot corner to change the system volume. Or to switch to another desktop/viewport/workspace.
+// * Parameter to change the size. (the default of 1x1 is good enough)
+// * Parameter to change the color. (the default black should be good enough)
+//     * The color string should be anything X11 accepts. Probably also #RRGGBB.
+//     * Maybe grabbing the color of the pixel on process launch. But that introduces to much complexity.
+// * Maybe a better idea is to read everything from a configuration file.
+//     * In that case, it would be nice to support at most 4 corners with the same process.
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
